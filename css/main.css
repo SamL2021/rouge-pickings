@@ -4,23 +4,23 @@ html {
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
+	/*added flexbox layout below as per instructions*/
 	display: flex;
   justify-content: center;
   align-items: center;
-	/*added soft red background color to help troubleshoot flexbox styles*/
-	background-color: #ed7864;
+	/*#ed7864 soft red background color to help troubleshoot flexbox styles*/
 }
 
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
+	/*added flexbox layout below as per instructions*/
 	display: flex;
   justify-content: center;
   align-items: center;
 	/*added flex-flow style as per instructions*/
 	flex-flow: row wrap;
-	/*added blue background color to help troubleshoot*/
-	background-color: #6495ed;
+	/*#6495ed blue background color to help troubleshoot*/
 
 }
 
@@ -49,40 +49,43 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: 3px solid #77a466;
+  /*removed border-bottom and added to image*/
 	margin: 0 auto;
+	/*added flexbox layout below as per instructions*/
 	display: flex;
   justify-content: center;
   align-items: center;
-	/*added pink background color to help troubleshoot*/
-	background-color: #ed6495;
+	/*#ed6495 pink background color to help troubleshoot*/
 	flex-direction: column;
 
 	}
 
 header h1 {
-	margin: 0;
-	padding: 38px 0;
+  margin: 0;
+	padding: 28px 0;
+  border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+  /*adjusted padding*/
+	padding: 10px 0px;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 10px;
+	padding: 10px 30px;
 	/*changed display to flex*/
 	display: flex;
-	justify-content: space-around;
+
 }
 header nav ul li a{
 	text-decoration: none;
@@ -93,20 +96,21 @@ header nav ul li a{
 .top-section,
 .bottom-section {
 	margin: 0 auto;
+	/*added flexbox layout below as per instructions*/
 	display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .top-section{
-	/*added green background color to help troubleshoot*/
-	background-color: #64edbc;
+	/*add #64edbc green background color to help troubleshoot*/
 	flex-flow: row wrap;
+  /* added padding*/
+  padding: 10px 30px;
 }
 
 .bottom-section{
-	/*added purple background color to help troubleshoot*/
-	background-color: #bc64ed;
+	/*add #bc64ed; purple background color to help troubleshoot*/
 	flex-direction: column;
 }
 
@@ -116,6 +120,9 @@ header nav ul li a{
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
+  /*added border-top to image*/
+  border-top: 3px solid #77a466;
+
 }
 
 .main-title {
@@ -135,20 +142,16 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 }
 
-.section-one h3 {
-	padding: 10px 0;
-}
+.section-two {}
+  /*removed left and right borders*/
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
+.section-one h3,
+  /*added section-one*/
 .section-two h3,
 .section-three h3 {
 	padding: 10px 30px;
@@ -159,7 +162,8 @@ header nav ul li a{
 	padding: 0;
 }
 .menu li {
-	padding: 10px 0;
+  /*modified padding for menu list in .section-two*/
+	padding: 10px 30px;
 	color:#77a466;
 }
 
@@ -179,12 +183,13 @@ footer {
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	text-align: center;
+	/*added flexbox layout below as per instructions*/
 	display: flex;
   justify-content: center;
   align-items: center;
-	/*added gold background color to help troubleshoot*/
-	background-color: #edbc64;
+	/*add #edbc64 gold background color to help troubleshoot*/
 	/*not adding flex-flow as default as row no wrap*/
+  width: 100%;
 }
 
 footer span {
