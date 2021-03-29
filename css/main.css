@@ -58,6 +58,7 @@ header {
 	/*#ed6495 pink background color to help troubleshoot*/
 	flex-direction: column;
 
+
 	}
 
 header h1 {
@@ -72,7 +73,7 @@ header h1 span {
 
 header nav {
   /*adjusted padding*/
-	padding: 10px 0px;
+	padding: 0px 0px;
 }
 header nav ul {
 	margin: 0;
@@ -83,10 +84,11 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 10px 30px;
+  /* reduced padding on sides from 30px to 10px */
+	padding: 10px 10px;
 	/*removed display:flex and removed bullets and center aligned as per Ann*/
   list-style-type: none;
-  text-align: center;
+  text-align: right;
 
 
 }
